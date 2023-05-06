@@ -3,9 +3,10 @@ import "./Card.scss";
 import { Link } from "react-router-dom";
 function Card({ item }) {
   return (
-    <Link to={`/product/${item.id}`}>
+    <Link className="link" to={`/product/${item.id}`}>
       <div className="card">
         <div className="image">
+          <span>{item.isNew && <span> New Session </span>}</span>
           <img src={item.img1} className="mainImg" alt="" />
           <img src={item.img2} className="secondImg" alt="" />
         </div>
