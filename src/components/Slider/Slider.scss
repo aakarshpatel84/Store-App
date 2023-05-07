@@ -1,6 +1,7 @@
 .slider {
   height: calc(100vh - 80px);
   width: 100vw;
+  overflow: hidden;
   .container {
     width: 300vw;
     display: flex;
@@ -15,12 +16,14 @@
   }
 
   .icons {
-    width: 100px;
+    width: 50px;
     width: fit-content;
     display: flex;
     position: absolute;
     left: 0;
     right: 0;
+    top: 90%;
+    color: white;
     margin: auto;
     border: 100px;
     gap: 10px;

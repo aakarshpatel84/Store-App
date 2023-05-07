@@ -23,13 +23,10 @@
 
     button {
       position: absolute;
-      //   min-width: 100px;
       height: 50px;
       width: fit-content;
-      //   padding: 10px;
       top: 0;
       bottom: 5;
-      //   left: 5;
       right: 5;
       margin: auto;
       cursor: pointer;
@@ -39,9 +36,7 @@
       background-color: rgba(243, 17, 17, 0.929);
       border-radius: 100%;
       text-transform: uppercase;
-      //   color: gray;
       color: #fff;
-      //   font-weight: 500;
     }
 
     img {

@@ -10,10 +10,17 @@
     .item {
       display: flex;
       align-items: center;
+      justify-content: center;
+      .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
     .left {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 25px;
     }
     .center {
@@ -22,11 +29,16 @@
     .right {
       display: flex;
       align-items: center;
+      justify-content: center;
+
       gap: 25px;
     }
   }
   .icons {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     gap: 20px;
     color: #777;
 
