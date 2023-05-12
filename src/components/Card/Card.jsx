@@ -6,14 +6,28 @@ function Card({ item }) {
     <Link className="link" to={`/product/${item.id}`}>
       <div className="card">
         <div className="image">
-          <span>{item.isNew && <span> New Session </span>}</span>
-          <img src={item.img1} className="mainImg" alt="" />
-          <img src={item.img2} className="secondImg" alt="" />
+          {item.attributes.isNew && <span> New Session </span>}
+          <img
+            src={
+              process.env.REACT_APP_UPLOAD_URL +
+              item.attributes?.img?.data?.attributes.url
+            }
+            alt=""
+            className="mainImg"
+          />
+          <img
+            src={
+              process.env.REACT_APP_UPLOAD_URL +
+              item.attributes?.img2?.data?.attributes.url
+            }
+            alt=""
+            className="secondImg"
+          />
         </div>
-        <h2>{item.title}</h2>
+        <h2>{item.attributes.title}</h2>
         <div className="prices">
-          <h3>${item.oldPrice}</h3>
-          <h3>${item.price}</h3>
+          <h3>${item.oldPrice || item.attributes.price + 20}</h3>
+          <h3>${item.attributes.price}</h3>
         </div>
       </div>
     </Link>

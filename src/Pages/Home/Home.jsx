@@ -10,7 +10,7 @@ function Home() {
     <div className="home">
       <Slider />
       {/* <Products /> */}
-      <FeturedProducts type="fetured" />
+      <FeturedProducts type="featured" />
       <Categories />
       <FeturedProducts type="tranding" />
       <Contact />
