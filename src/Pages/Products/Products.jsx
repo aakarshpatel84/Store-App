@@ -70,14 +70,14 @@ function Products() {
               id="desc"
               value="asc"
               name="price"
-              onChange={(e) => setSort("asc")}
+              onChange={(e) => setSort("desc")}
             />
             <label htmlFor="desc">Price (Highest first)</label>
           </div>
         </div>
       </div>
       <div className="right">
-        <div className="">
+        <div className="catImg">
           <img src="/img/pexels-juan-mendez-1536619.jpg" alt="" />
           <List
             catId={catId}
