@@ -6,8 +6,8 @@ import { useFetch } from "../../hooks/useFetch";
 function Products() {
   const catId = parseInt(useParams().id);
   const [maxPrice, setMaxPrice] = useState(1000);
-  const [sort, setSort] = useState(null);
-  const [selectedSubCats, setSelectedSubCats] = useState([]);
+  const [sort, setSort] = useState("desc");
+  const [selectedSubCats, setSelectedSubCats] = useState(null);
   const { data, loading, error } = useFetch(
     `/sub-categories?[filters][categories][id][$eq]=${catId}`
   );
@@ -68,7 +68,7 @@ function Products() {
             <input
               type="radio"
               id="desc"
-              value="asc"
+              value="desc"
               name="price"
               onChange={(e) => setSort("desc")}
             />
