@@ -23,8 +23,8 @@ The Store App is a powerful e-commerce solution that allows you to manage your o
 To install the Store App, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/store-app.git`
-2. Install dependencies: `npm install`
-3. Start the app: `npm start`
+2. Install dependencies: `yarn add`
+3. Start the app: `yarn start`
 
 ## Configuration
 
