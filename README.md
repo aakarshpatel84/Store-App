@@ -16,7 +16,7 @@ This is the official documentation for the Store App. It provides detailed infor
 
 The Store App is a powerful e-commerce solution that allows you to manage your online store effectively. It provides a user-friendly interface for managing products, inventory, orders, and customers.
 
-![Store App](img/pexels-andrea-piacquadio-3775120.jpg)
+![Store App](/public/img/pexels-andrea-piacquadio-3775120.jpg)
 
 ## Installation
 
